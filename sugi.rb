@@ -5,21 +5,21 @@
 class Sugi < Formula
   desc "Terminal UI git client — GitHub/GitLab PRs, AI commit messages, commit graph"
   homepage "https://github.com/Kroszborg/sugi"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Kroszborg/sugi/releases/download/v0.1.1/sugi_0.1.1_macOS_x86_64.tar.gz"
-      sha256 "091d3a8eea395e1b7a41e5bc27cadb066256d58fcf0903b6672ef9c7b708c4ba"
+      url "https://github.com/Kroszborg/sugi/releases/download/v0.2.0/sugi_0.2.0_macOS_x86_64.tar.gz"
+      sha256 "9ef664d57aa24885618c8d83dd90bfd5ba390d0e6abb8c08fd3964e546bb2069"
 
       define_method(:install) do
         bin.install "sugi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Kroszborg/sugi/releases/download/v0.1.1/sugi_0.1.1_macOS_arm64.tar.gz"
-      sha256 "6f8c18f43abcfac37ee782e09481b8a11ed186972d74c2afb264e43dd77c9042"
+      url "https://github.com/Kroszborg/sugi/releases/download/v0.2.0/sugi_0.2.0_macOS_arm64.tar.gz"
+      sha256 "83cfa92b069d7468f2dd58059674d3f2dea38e22a3c9a21663e85c514bb94687"
 
       define_method(:install) do
         bin.install "sugi"
@@ -29,15 +29,15 @@ class Sugi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Kroszborg/sugi/releases/download/v0.1.1/sugi_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "ecadc83a841fc56ddc8f7683f37a47953115bdbc284155366da51e44647e1773"
+      url "https://github.com/Kroszborg/sugi/releases/download/v0.2.0/sugi_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "ad1604fbfb02e12314b365600b9479d92caca35eadb116f04c2d8114ab92cc50"
       define_method(:install) do
         bin.install "sugi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Kroszborg/sugi/releases/download/v0.1.1/sugi_0.1.1_Linux_arm64.tar.gz"
-      sha256 "c7d69a1a8dc630c00a7af71ca97379a2445bf6453885e405364bcb88272083c6"
+      url "https://github.com/Kroszborg/sugi/releases/download/v0.2.0/sugi_0.2.0_Linux_arm64.tar.gz"
+      sha256 "cb212e39b51d553abb823ff45e507667680abf089737c8fd6e7016e820cf8552"
       define_method(:install) do
         bin.install "sugi"
       end
